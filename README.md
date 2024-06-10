@@ -1,5 +1,3 @@
-# ReadMe
-
 # ChiFraud: A Long-term Web Text Dataset for Chinese Fraud Detection
 
 ---
