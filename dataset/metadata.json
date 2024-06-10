@@ -1,0 +1,114 @@
+{
+    "@type": "sc:Dataset",
+    "name": "ChiFraud",
+    "description": "ChiFraud is the first anonymous public Chinese fraud-text detection dataset, with extensive expert annotations 59,106 fraudulent texts and 352,328 normal texts. ChiFraud presents a more practical fraud detection scenario, characterized by shifting distribution detection.",
+    "license": "CC BY-NC 4.01",
+    "url": "https://github.com/xuemingxxx/ChiFraud/tree/main/dataset",
+    "distribution": [
+      {
+        "@type": "cr:FileObject",
+        "@id": "ChiFraud_train.csv",
+        "name": "ChiFraud_train.csv",
+        "contentUrl": "https://github.com/xuemingxxx/ChiFraud/tree/main/dataset/ChiFraud_train.csv",
+        "encodingFormat": "text/csv",
+        "sha256": "25469871dc93c7e06d2b312dffdfd59ef7287468aa232dd629971ca0509affd7"
+      },
+      {
+        "@type": "cr:FileObject",
+        "@id": "ChiFraud_t2022.csv",
+        "name": "ChiFraud_t2022.csv",
+        "contentUrl": "https://github.com/xuemingxxx/ChiFraud/tree/main/dataset/ChiFraud_t2022.csv",
+        "encodingFormat": "text/csv",
+        "sha256": "9775352b407d19080c963b54741404a477f9c44ea7bab42f1850bd84b703ba27"
+      },
+      {
+        "@type": "cr:FileObject",
+        "@id": "ChiFraud_t2023.csv",
+        "name": "ChiFraud_t2023.csv",
+        "contentUrl": "https://github.com/xuemingxxx/ChiFraud/tree/main/dataset/ChiFraud_t2023.csv",
+        "encodingFormat": "text/csv",
+        "sha256": "fc7cacabce4891bd0904ae75feae83e58248a437a1c320cdc2286392e430d8f0"
+      }
+    ],
+    "recordSet": [
+      {
+        "@type": "cr:RecordSet",
+        "name": "examples",
+        "description": "Records extracted from the example table, with their schema.",
+        "field": [
+          {
+            "@type": "cr:Field",
+            "name": "label_id",
+            "description": "The first column contains the label of the text in training file.",
+            "dataType": "sc:Integer",
+            "references": {
+              "fileObject": { "@id": "ChiFraud_train.csv" },
+              "extract": {
+                "column": "Label_id"
+              }
+            }
+          },
+          {
+            "@type": "cr:Field",
+            "name": "Text",
+            "description": "The short text content in training file.",
+            "dataType": "sc:Text",
+            "references": {
+              "fileObject": { "@id": "ChiFraud_train.csv" },
+              "extract": {
+                "column": "text"
+              }
+            }
+          },
+          {
+            "@type": "cr:Field",
+            "name": "label_id",
+            "description": "The first column contains the label of the text in 2022 test file.",
+            "dataType": "sc:Integer",
+            "references": {
+              "fileObject": { "@id": "ChiFraud_t2022.csv" },
+              "extract": {
+                "column": "Label_id"
+              }
+            }
+          },
+          {
+            "@type": "cr:Field",
+            "name": "Text",
+            "description": "The short text content in 2022 test file..",
+            "dataType": "sc:Text",
+            "references": {
+              "fileObject": { "@id": "ChiFraud_t2022.csv" },
+              "extract": {
+                "column": "text"
+              }
+            }
+          },
+          {
+            "@type": "cr:Field",
+            "name": "label_id",
+            "description": "The first column contains the label of the text in 2023 test file..",
+            "dataType": "sc:Integer",
+            "references": {
+              "fileObject": { "@id": "ChiFraud_t2023.csv" },
+              "extract": {
+                "column": "Label_id"
+              }
+            }
+          },
+          {
+            "@type": "cr:Field",
+            "name": "Text",
+            "description": "The short text content in 2023 test file..",
+            "dataType": "sc:Text",
+            "references": {
+              "fileObject": { "@id": "ChiFraud_t2023.csv" },
+              "extract": {
+                "column": "text"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
