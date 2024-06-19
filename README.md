@@ -53,3 +53,4 @@ Qwen: https://huggingface.co/Qwen
 LLaMa2: https://huggingface.co/meta-llama
 
 **Training Baselines**
+sh run.sh
