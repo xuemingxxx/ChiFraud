@@ -38,8 +38,8 @@ Label_id  Text
 | 5 | Prohibited Drugs |
 | 6 | Unauthorized Cash-Out |
 | 7 | Unauthorized Certification |
-| 8 | Underground Loan |
-| 9 | Fake SIM |
+| 8 | Fake SIM|
+| 9 | Underground Loan |
 | 10 | New |
 
 **Download Pretrain Models**
