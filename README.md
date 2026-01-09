@@ -54,3 +54,16 @@ LLaMa2: https://huggingface.co/meta-llama
 
 **Training Baselines**
 ```sh run.sh```
+
+### Citation
+Please cite our work as follows.
+```bibtex
+@inproceedings{tang2025chifraud,
+  title={{ChiFraud}: A Long-Term Web Text Benchmark for {Chinese} Fraud Detection},
+  author={Tang, Min and Zou, Lixin and Liang, Shiuan Ni and Jin, Zhe and Wang, Weiqing and Cui, Shujie},
+  booktitle={International Conference on Computational Linguistics (COLING 2025)},
+  pages={5962--5974},
+  year={2025},
+  publisher={Association for Computational Linguistics}
+}
+```
